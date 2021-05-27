@@ -1,0 +1,5 @@
+{
+  "Addr": "smtp.gmail.com",
+  "Port": "587",
+  "From": "example@gmail.com"
+}

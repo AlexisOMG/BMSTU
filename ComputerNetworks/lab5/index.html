@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BMSTU news</title>
+</head>
+<body>
+    <h1>News BMSTU</h1>
+    <hr>
+    {{ range .items }}
+    <div>
+        {{ if .HasTitle }}
+        <a href="/article?url={{ .Href }}"> <h2> {{ .Title }} </h2> </a>
+        {{ end }}
+        {{ if .HasImg }}
+        <img src="{{ .ImgSrc }}" />
+        {{ end }}
+        {{ if .HasText }}
+        <div>
+        {{ .Text }}
+        </div>
+        {{ end }}
+        <hr>
+    </div>
+    {{ end }}
+</body>
+</html>

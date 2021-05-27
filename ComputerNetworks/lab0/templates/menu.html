@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+	<style>
+    .menu-main {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      margin-top:25px;
+    }
+    .current {
+      text-decoration: none;
+      background:#30A8E6;
+      color:#fff;
+      padding:10px;
+      font-family: arial;
+      border-radius:4px;
+      -moz-transition: all 0.3s 0.01s ease;
+      -o-transition: all 0.3s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease;
+    }
+    .current:hover {
+      background:#1C85BB;
+    }
+    .menu-main > li {
+      float:left;
+      margin-right:5px;
+
+    }
+    </style>
+    <ul class="menu-main">
+      <li><a href="/habr" class="current">Habr</a></li>
+      <li><a href="/forbes" class="current">Forbes</a></li>
+      <li><a href="/fl" class="current">Free Lance</a></li>
+    </ul>

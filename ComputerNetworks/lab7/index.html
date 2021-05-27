@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web-proxy</title>
+    <script>
+    function changeURL(url) {
+        let mirrorUrl = "{{ .mirrorUrl }}"
+        if (url.startsWith("http://")) {
+            url = url.slice(7)
+        } else if (url.startsWith("https://")) {
+            url = url.slice(8)
+        }
+        return mirrorUrl + url
+    }
+    </script>
+</head>
+
+<body>
+    <p><b>Examples:</b><br></p>
+    <p>https://lenta.ru/</p>
+    <p>https://stackoverflow.com/questions/49547480/how-to-make-a-proxy-by-golang</p>
+    <p>www.mathprofi.ru/</p>
+    <p>
+        <input id="url" type="text" size="40">
+        <input type="button" value="Mirror"
+        onclick="window.location.href=changeURL(document.getElementById('url').value)">
+    </p>
+</body>
+
+</html>

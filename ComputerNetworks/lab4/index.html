@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>News Kod.ru</title>
+  </head>
+  <body>
+    <h1>News Kod.ru</h1>
+    <hr>
+    {{ range .items }}
+			<div>
+				<a href="{{ .Href }}"> <h2> {{ .Text }} </h2> </a>
+				<img src="{{ .ImgSrc }}" />
+        <hr>
+			</div>
+		{{ end }}
+  </body>
+</html>
