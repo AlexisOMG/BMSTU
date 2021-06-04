@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"image"
 	"image/draw"
 	_ "image/png"
@@ -14,23 +13,29 @@ import (
 	"os"
 	"runtime"
 	"time"
+	"unsafe"
 
 	"github.com/go-gl/gl/v2.1/gl"
 	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
 const (
-	width     = 800
-	height    = 800
+	width     = 300
+	height    = 300
 	angleMove = 5
 	posDelta  = 0.1
 )
 
-var texture uint32
-var infLight bool
-var st State
-var dodecahedron Dodecahedron
-var t float32 = 0.0
+var (
+	texture      uint32
+	infLight     bool
+	st           State
+	dodecahedron Dodecahedron
+	t            float32 = 0.0
+	polygons     [12][]float64
+	normals      [12][]float64
+	texCoords    [12][]float64
+)
 
 type Point struct {
 	x float64
@@ -139,7 +144,6 @@ func (dodecahedron *Dodecahedron) getPoint(h, w int) *Point {
 		dodecahedron.Points[h] = append(dodecahedron.Points[h], nil)
 	}
 	if dodecahedron.Points[h][w] == nil {
-		log.Println(h, w)
 		var teta, phi float64
 		if h == 0 || h == 3 {
 			teta = math.Asin(2 / (math.Sqrt(3) * (1 + math.Sqrt(5)) * math.Sin(math.Pi/5)))
@@ -177,11 +181,16 @@ func getN(a, b, c Point) Point {
 		z: v1.x*v2.y - v1.y*v2.x,
 	}
 
+	length := math.Sqrt(answ.x*answ.x + answ.y*answ.y + answ.z*answ.z)
+
+	answ.x /= length
+	answ.y /= length
+	answ.z /= length
+
 	return answ
 }
 
 func setLight(l Point) {
-	gl.Enable(gl.LIGHT0)
 	var diffuse []float32 = []float32{0.4, 0.7, 0.2}
 	var posit []float32 = []float32{0, 0, 1, 1}
 	var ambi []float32 = []float32{1, 1, 1, 1}
@@ -200,6 +209,37 @@ func setLight(l Point) {
 	gl.Lightfv(gl.LIGHT0, gl.CONSTANT_ATTENUATION, &cAtten)
 	gl.Lightfv(gl.LIGHT0, gl.LINEAR_ATTENUATION, &lAtten)
 	gl.Lightfv(gl.LIGHT0, gl.QUADRATIC_ATTENUATION, &qAtten)
+	gl.ShadeModel(gl.FLAT)
+}
+
+func appendNormals(x, y, z float64, i int) {
+	normals[i] = append(normals[i], x, y, z)
+}
+
+func appendTex(x, y float64, i int) {
+	texCoords[i] = append(texCoords[i], x, y)
+}
+
+func appendPolygon(a Point, i int) {
+	polygons[i] = append(polygons[i], a.x, a.y, a.z)
+}
+
+func render() {
+	for i := 0; i < 12; i++ {
+		gl.NormalPointer(gl.DOUBLE, 0, unsafe.Pointer(&normals[i][0]))
+
+		gl.VertexPointer(3, gl.DOUBLE, 0, unsafe.Pointer(&polygons[i][0]))
+
+		gl.TexCoordPointer(2, gl.DOUBLE, 0, unsafe.Pointer(&texCoords[i][0]))
+
+		gl.DrawArrays(gl.POLYGON, 0, 5)
+	}
+}
+
+func clearArr() {
+	polygons = [12][]float64{}
+	normals = [12][]float64{}
+	texCoords = [12][]float64{}
 }
 
 func (dodecahedron *Dodecahedron) draw(light Point) {
@@ -210,19 +250,20 @@ func (dodecahedron *Dodecahedron) draw(light Point) {
 		defer gl.PopMatrix()
 		dodecahedron.Figure.configurate()
 
-		gl.Begin(gl.POLYGON)
-		dodecahedron.Colors[0].setColor()
 		n1 := getN(*dodecahedron.getPoint(0, 0), *dodecahedron.getPoint(0, 1), *dodecahedron.getPoint(0, 2))
-		gl.Normal3d(-n1.x, -n1.y, -n1.z)
-		for i := 0; i < 5; i++ {
-			gl.TexCoord2f(float32(i)/5.0, float32(i)/5.0)
-			dodecahedron.getPoint(0, i%5).drawPoint()
-		}
-		gl.End()
+
+		clearArr()
+		ind := 0
 
 		for i := 0; i < 5; i++ {
-			gl.Begin(gl.POLYGON)
-			dodecahedron.Colors[(i+1)%len(dodecahedron.Colors)].setColor()
+			appendNormals(-n1.x, -n1.y, -n1.z, ind)
+			appendTex(float64(i)/5.0, float64(i)/5.0, ind)
+			appendPolygon(*dodecahedron.getPoint(0, i%5), ind)
+		}
+
+		ind++
+
+		for i := 0; i < 5; i++ {
 
 			a := dodecahedron.getPoint(0, i)
 			b := dodecahedron.getPoint(0, (i+1)%5)
@@ -231,25 +272,32 @@ func (dodecahedron *Dodecahedron) draw(light Point) {
 			e := dodecahedron.getPoint(1, i)
 
 			n := getN(*a, *b, *c)
-			gl.Normal3d(n.x, n.y, n.z)
 
-			gl.TexCoord2f(0, float32(i)/5.0)
-			a.drawPoint()
-			gl.TexCoord2f(0, float32((i+1)%5)/5.0)
-			b.drawPoint()
-			gl.TexCoord2f(0.2, float32((i+1)%5)/5.0)
-			c.drawPoint()
-			gl.TexCoord2f(0.4, float32(i)/5.0)
-			d.drawPoint()
-			gl.TexCoord2f(0.2, float32(i)/5.0)
-			e.drawPoint()
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
 
-			gl.End()
+			appendTex(0, float64(i)/5.0, ind)
+			appendPolygon(*a, ind)
+
+			appendTex(0, float64((i+1)%5)/5.0, ind)
+			appendPolygon(*b, ind)
+
+			appendTex(0.2, float64((i+1)%5)/5.0, ind)
+			appendPolygon(*c, ind)
+
+			appendTex(0.4, float64(i)/5.0, ind)
+			appendPolygon(*d, ind)
+
+			appendTex(0.2, float64(i)/5.0, ind)
+			appendPolygon(*e, ind)
+
+			ind++
 		}
 
 		for i := 0; i < 5; i++ {
-			gl.Begin(gl.POLYGON)
-			dodecahedron.Colors[(i+6)%len(dodecahedron.Colors)].setColor()
 
 			a := dodecahedron.getPoint(3, (i+1)%5)
 			b := dodecahedron.getPoint(3, i)
@@ -258,31 +306,39 @@ func (dodecahedron *Dodecahedron) draw(light Point) {
 			e := dodecahedron.getPoint(2, (i+1)%5)
 
 			n := getN(*a, *b, *c)
-			gl.Normal3d(n.x, n.y, n.z)
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
+			appendNormals(n.x, n.y, n.z, ind)
 
-			gl.TexCoord2f(0.6, float32((i+1)%5)/5.0)
-			a.drawPoint()
-			gl.TexCoord2f(0.6, float32(i)/5.0)
-			b.drawPoint()
-			gl.TexCoord2f(0.4, float32(i)/5.0)
-			c.drawPoint()
-			gl.TexCoord2f(0.2, float32((i+1)%5)/5.0)
-			d.drawPoint()
-			gl.TexCoord2f(0.4, float32((i+1)%5)/5.0)
-			e.drawPoint()
+			appendTex(0.6, float64((i+1)%5)/5.0, ind)
+			appendPolygon(*a, ind)
 
-			gl.End()
+			appendTex(0.6, float64(i)/5.0, ind)
+			appendPolygon(*b, ind)
+
+			appendTex(0.4, float64(i)/5.0, ind)
+			appendPolygon(*c, ind)
+
+			appendTex(0.2, float64((i+1)%5)/5.0, ind)
+			appendPolygon(*d, ind)
+
+			appendTex(0.4, float64((i+1)%5)/5.0, ind)
+			appendPolygon(*e, ind)
+
+			ind++
 		}
 
-		gl.Begin(gl.POLYGON)
-		dodecahedron.Colors[11%len(dodecahedron.Colors)].setColor()
 		n1 = getN(*dodecahedron.getPoint(3, 0), *dodecahedron.getPoint(3, 1), *dodecahedron.getPoint(3, 2))
-		gl.Normal3d(n1.x, n1.y, n1.z)
-		for i := 0; i <= 5; i++ {
-			gl.TexCoord2f(float32(i)/5.0, float32(i)/5.0)
-			dodecahedron.getPoint(3, i%5).drawPoint()
+
+		for i := 0; i < 5; i++ {
+			appendNormals(n1.x, n1.y, n1.z, ind)
+			appendTex(float64(i)/5.0, float64(i)/5.0, ind)
+			appendPolygon(*dodecahedron.getPoint(3, i%5), ind)
 		}
-		gl.End()
+		render()
+
 	}
 }
 
@@ -421,21 +477,20 @@ func init() {
 }
 
 func main() {
-	fmt.Println("HI")
 	if err := glfw.Init(); err != nil {
 		log.Fatalln("failed to initialize glfw:", err)
 	}
 	defer glfw.Terminate()
 
 	glfw.WindowHint(glfw.Resizable, glfw.False)
-	window, err := glfw.CreateWindow(width, height, "Lab2", nil, nil)
+	window, err := glfw.CreateWindow(width, height, "Lab7", nil, nil)
 	if err != nil {
-		log.Fatal(err.Error())
+		log.Fatal("wtf", err.Error())
 	}
 	window.MakeContextCurrent()
 
 	if err := gl.Init(); err != nil {
-		log.Fatal(err.Error())
+		log.Fatal("Unable to gl.Init", err.Error())
 	}
 
 	dodecahedron = Dodecahedron{
@@ -454,11 +509,18 @@ func main() {
 	defer gl.DeleteTextures(1, &texture)
 	gl.ClearDepth(1)
 	gl.DepthFunc(gl.LEQUAL)
+	// gl.TexEnvi(gl.TEXTURE_ENV, gl.TEXTURE_ENV_MODE, gl.MODULATE)
 
 	gl.Enable(gl.DEPTH_TEST)
 	gl.LoadIdentity()
 	gl.Enable(gl.LIGHTING)
-	gl.Enable(gl.NORMALIZE)
+	gl.Enable(gl.LIGHT0)
+	// gl.Enable(gl.NORMALIZE)
+	gl.ShadeModel(gl.FLAT)
+
+	gl.EnableClientState(gl.VERTEX_ARRAY)
+	gl.EnableClientState(gl.NORMAL_ARRAY)
+	gl.EnableClientState(gl.TEXTURE_COORD_ARRAY)
 
 	for !window.ShouldClose() {
 
@@ -468,13 +530,16 @@ func main() {
 		t -= float32(math.Floor(float64(t)))
 
 		glfw.PollEvents()
-		tm := time.Now()
-		gl.Clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT)
-		dodecahedron.draw(l)
 
-		gl.Disable(gl.LIGHT0)
-		window.SwapBuffers()
+		gl.Clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT)
+
+		tm := time.Now()
+		dodecahedron.draw(l)
 		dt := time.Since(tm).Microseconds()
 		println(dt)
+
+		window.SwapBuffers()
 	}
+
+	gl.Disable(gl.LIGHT0)
 }
