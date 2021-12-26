@@ -1,0 +1,4 @@
+github.com/AlexisOMG/tfl-lab2 v0.0.0-20211206160243-b93f4777a2fa h1:3/GaCbpCBuFAK23+CpH+O3fYXi75cmPniz561yPqVoI=
+github.com/AlexisOMG/tfl-lab2 v0.0.0-20211206160243-b93f4777a2fa/go.mod h1:vB5Jp4ArdJBkUOiTNqQm/diaZ3MX2sr8m2qSn11gR8M=
+github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=

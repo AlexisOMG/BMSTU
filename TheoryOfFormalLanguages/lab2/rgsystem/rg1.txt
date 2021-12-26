@@ -1,0 +1,4 @@
+A = aB + x
+B = bC + x
+C = cD + x
+D = dA + x
