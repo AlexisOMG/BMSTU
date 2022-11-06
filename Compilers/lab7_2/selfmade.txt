@@ -1,0 +1,24 @@
+$AXIOM S
+$NTERM N T R T1 R' R1 V V1 V2 V3
+$TERM "AxiomKeyword" "Nterm" "Term" "NTermKeyword" "TermKeyword" "RuleKeyword" "EpsKeyword" "NewLine" "Equal"
+
+* правила грамматики
+$RULE S = "AxiomKeyword" "Nterm" "NTermKeyword" "Nterm" N T R
+$RULE N = "Nterm" N
+            $EPS
+$RULE T = "TermKeyword" "Term" T1
+$RULE T1 = "Term" T1
+            $EPS
+$RULE R = R' R1
+$RULE R1 = R' R1
+            $EPS
+$RULE R' = "RuleKeyword" "Nterm" "Equal" V
+$RULE V = V1 V2
+$RULE V1 = "Term" V3
+            "Nterm" V3
+            "EpsKeyword"
+$RULE V3 = "Term" V3
+            "Nterm" V3
+            $EPS
+$RULE V2 = "NewLine" V
+            $EPS

@@ -1,0 +1,10 @@
+$NTERM Init Nterms Terms Rules RulesOr RulesAnd Expr
+$TERM "$NTERM" "$TERM" "$RULE" "nterm" "term" "=" "|" "{" "[" "]" "}" "(" ")"
+
+$RULE Init = Nterms Terms Rules
+$RULE Nterms = "$NTERM" { "nterm" } 
+$RULE Terms = "$TERM" { "nterm" }
+$RULE Rules = { "$RULE" "nterm" "=" RulesOr }
+$RULE RulesOr = RulesAnd { "|" RulesAnd }
+$RULE RulesAnd = Expr RulesAnd |
+$RULE Expr = "nterm" | "term" | "{" RulesOr "}" | "[" RulesOr "]" | "(" RulesOr ")"

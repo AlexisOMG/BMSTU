@@ -1,0 +1,445 @@
+2022.03.27 15:11:36 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/anyegorov/scala/real_lab3/.metals/lsp.trace.json or /Users/anyegorov/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2022.03.27 15:11:36 INFO  logging to file /Users/anyegorov/scala/real_lab3/.metals/metals.log[0m
+2022.03.27 15:11:36 INFO  Started: Metals version 0.11.2 in workspace '/Users/anyegorov/scala/real_lab3' for client Visual Studio Code 1.65.2.[0m
+2022.03.27 15:11:36 INFO  Parse release: 1.8.0_202[0m
+2022.03.27 15:11:37 INFO  time: initialize in 0.77s[0m
+2022.03.27 15:11:37 WARN  Build server is not auto-connectable.[0m
+2022.03.27 15:11:37 WARN  no build tool detected in workspace '/Users/anyegorov/scala/real_lab3'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.03.27 15:11:37 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:11:39 INFO  no build target found for /Users/anyegorov/scala/real_lab3/Program.scala. Using presentation compiler with project's scala-library version: 3.1.1[0m
+2022.03.27 15:11:40 INFO  time: code lens generation in 2.29s[0m
+2022.03.27 15:12:23 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:14:21 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:14:36 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:15:00 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:15:29 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:15:36 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:15:56 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:16:31 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:18:02 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:19:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:48:08 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:48:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:48:38 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:49:30 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:50:48 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:51:19 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:52:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:52:26 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:55:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:58:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:58:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:59:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 15:59:22 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:00:25 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:23:25 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:26:16 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:26:23 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:26:26 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:26:54 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:27:26 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:27:42 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:29:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:31:14 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:31:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:34:55 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:36:16 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:37:10 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:37:21 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:40:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:40:50 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:41:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:42:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:43:03 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:44:30 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:44:52 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:45:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:45:43 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:45:57 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:46:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:46:24 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:48:25 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:48:31 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:49:15 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:49:43 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:50:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:51:34 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:56:21 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 16:56:50 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:00:56 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:02:07 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:03:17 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:03:55 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:04:12 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:05:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:06:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:07:36 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:10:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:10:26 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:12:12 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:12:21 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:12:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:13:13 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:13:33 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:14:15 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:16:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:18:20 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:18:21 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:18:49 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:19:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:20:54 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:35:42 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:37:46 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:39:34 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:40:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:40:53 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:53:10 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:53:22 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:55:53 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:56:27 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 17:56:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:02:28 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:03:03 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:06:43 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:15:44 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:17:43 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:17:57 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:24:23 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:25:46 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+Exception in thread "pool-3-thread-1" java.lang.Error: dotty.tools.dotc.core.MissingType: 
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dotty.tools.dotc.core.MissingType: 
+	at dotty.tools.dotc.core.TypeErasure.dotty$tools$dotc$core$TypeErasure$$sigName(TypeErasure.scala:782)
+	at dotty.tools.dotc.core.TypeErasure$.sigName(TypeErasure.scala:204)
+	at dotty.tools.dotc.core.Signature.$anonfun$2(Signature.scala:113)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at dotty.tools.dotc.core.Signature.prependTermParams(Signature.scala:113)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.computeSignature$2(Types.scala:3521)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.signature(Types.scala:3538)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:612)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:602)
+	at dotty.tools.dotc.core.Symbols$Symbol.signature(Symbols.scala:191)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOverloadIdx$1(SemanticdbSymbols.scala:112)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addDescriptor$1(SemanticdbSymbols.scala:133)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:137)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOwner$1(SemanticdbSymbols.scala:96)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:136)
+	at scala.meta.internal.pc.SemanticdbSymbols$.symbolName(SemanticdbSymbols.scala:79)
+	at scala.meta.internal.pc.completions.Completions.visit$3(Completions.scala:122)
+	at scala.meta.internal.pc.completions.Completions.$anonfun$5(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch$$anonfun$1(Completions.scala:76)
+	at scala.collection.immutable.List.map(List.scala:250)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch(Completions.scala:76)
+	at scala.meta.internal.pc.completions.Completions.filterInteresting(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.completions(Completions.scala:50)
+	at scala.meta.internal.pc.completions.CompletionsProvider.completions(CompletionsProvider.scala:66)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.complete$$anonfun$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-3-thread-2" java.lang.Error: dotty.tools.dotc.core.MissingType: 
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dotty.tools.dotc.core.MissingType: 
+	at dotty.tools.dotc.core.TypeErasure.dotty$tools$dotc$core$TypeErasure$$sigName(TypeErasure.scala:782)
+	at dotty.tools.dotc.core.TypeErasure$.sigName(TypeErasure.scala:204)
+	at dotty.tools.dotc.core.Signature.$anonfun$2(Signature.scala:113)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at dotty.tools.dotc.core.Signature.prependTermParams(Signature.scala:113)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.computeSignature$2(Types.scala:3521)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.signature(Types.scala:3538)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:612)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:602)
+	at dotty.tools.dotc.core.Symbols$Symbol.signature(Symbols.scala:191)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOverloadIdx$1(SemanticdbSymbols.scala:112)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addDescriptor$1(SemanticdbSymbols.scala:133)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:137)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOwner$1(SemanticdbSymbols.scala:96)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:136)
+	at scala.meta.internal.pc.SemanticdbSymbols$.symbolName(SemanticdbSymbols.scala:79)
+	at scala.meta.internal.pc.completions.Completions.visit$3(Completions.scala:122)
+	at scala.meta.internal.pc.completions.Completions.$anonfun$5(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch$$anonfun$1(Completions.scala:76)
+	at scala.collection.immutable.List.map(List.scala:250)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch(Completions.scala:76)
+	at scala.meta.internal.pc.completions.Completions.filterInteresting(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.completions(Completions.scala:50)
+	at scala.meta.internal.pc.completions.CompletionsProvider.completions(CompletionsProvider.scala:66)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.complete$$anonfun$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-3-thread-3" java.lang.Error: dotty.tools.dotc.core.MissingType: 
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dotty.tools.dotc.core.MissingType: 
+	at dotty.tools.dotc.core.TypeErasure.dotty$tools$dotc$core$TypeErasure$$sigName(TypeErasure.scala:782)
+	at dotty.tools.dotc.core.TypeErasure$.sigName(TypeErasure.scala:204)
+	at dotty.tools.dotc.core.Signature.$anonfun$2(Signature.scala:113)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at dotty.tools.dotc.core.Signature.prependTermParams(Signature.scala:113)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.computeSignature$2(Types.scala:3521)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.signature(Types.scala:3538)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:612)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:602)
+	at dotty.tools.dotc.core.Symbols$Symbol.signature(Symbols.scala:191)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOverloadIdx$1(SemanticdbSymbols.scala:112)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addDescriptor$1(SemanticdbSymbols.scala:133)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:137)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOwner$1(SemanticdbSymbols.scala:96)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:136)
+	at scala.meta.internal.pc.SemanticdbSymbols$.symbolName(SemanticdbSymbols.scala:79)
+	at scala.meta.internal.pc.completions.Completions.visit$3(Completions.scala:122)
+	at scala.meta.internal.pc.completions.Completions.$anonfun$5(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch$$anonfun$1(Completions.scala:76)
+	at scala.collection.immutable.List.map(List.scala:250)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch(Completions.scala:76)
+	at scala.meta.internal.pc.completions.Completions.filterInteresting(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.completions(Completions.scala:50)
+	at scala.meta.internal.pc.completions.CompletionsProvider.completions(CompletionsProvider.scala:66)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.complete$$anonfun$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-3-thread-4" java.lang.Error: dotty.tools.dotc.core.MissingType: 
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dotty.tools.dotc.core.MissingType: 
+	at dotty.tools.dotc.core.TypeErasure.dotty$tools$dotc$core$TypeErasure$$sigName(TypeErasure.scala:782)
+	at dotty.tools.dotc.core.TypeErasure$.sigName(TypeErasure.scala:204)
+	at dotty.tools.dotc.core.Signature.$anonfun$2(Signature.scala:113)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at dotty.tools.dotc.core.Signature.prependTermParams(Signature.scala:113)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.computeSignature$2(Types.scala:3521)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.signature(Types.scala:3538)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:612)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:602)
+	at dotty.tools.dotc.core.Symbols$Symbol.signature(Symbols.scala:191)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOverloadIdx$1(SemanticdbSymbols.scala:112)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addDescriptor$1(SemanticdbSymbols.scala:133)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:137)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addOwner$1(SemanticdbSymbols.scala:96)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:136)
+	at scala.meta.internal.pc.SemanticdbSymbols$.symbolName(SemanticdbSymbols.scala:79)
+	at scala.meta.internal.pc.completions.Completions.visit$3(Completions.scala:122)
+	at scala.meta.internal.pc.completions.Completions.$anonfun$5(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch$$anonfun$1(Completions.scala:76)
+	at scala.collection.immutable.List.map(List.scala:250)
+	at scala.meta.internal.pc.completions.Completions.enrichWithSymbolSearch(Completions.scala:76)
+	at scala.meta.internal.pc.completions.Completions.filterInteresting(Completions.scala:148)
+	at scala.meta.internal.pc.completions.Completions.completions(Completions.scala:50)
+	at scala.meta.internal.pc.completions.CompletionsProvider.completions(CompletionsProvider.scala:66)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.complete$$anonfun$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+мар 27, 2022 6:41:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8099
+мар 27, 2022 6:44:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8247
+2022.03.27 18:53:16 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:53:37 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:58:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:58:08 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:58:22 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:58:39 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 18:59:24 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:00:03 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:00:33 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:00:47 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:01:50 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:03:08 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:03:33 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:04:43 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:07:59 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:08:25 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:11:02 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:11:54 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:11:59 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:13:10 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:13:22 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:14:22 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:14:38 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:16:54 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:17:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:17:19 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:17:28 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:20:52 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:22:27 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:27:12 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:46:10 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:46:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:48:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:48:58 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:49:05 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:49:07 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:49:48 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:50:29 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:51:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:53:27 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:53:32 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:54:49 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:56:10 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:56:35 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:56:51 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:57:17 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 19:58:45 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:02:07 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:02:23 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:02:31 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:02:41 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:03:12 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:03:18 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:03:42 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:10:20 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:10:58 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:11:36 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:12:01 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+мар 27, 2022 8:12:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13867
+2022.03.27 20:12:38 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:13:15 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:13:26 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:13:47 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:13:50 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:13:56 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:36:59 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:37:53 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:39:25 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:40:42 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:41:08 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:41:14 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:46:55 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 20:49:21 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:42:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:42:50 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:43:29 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:44:01 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:44:12 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:47:16 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:51:38 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:51:49 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:52:26 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:53:19 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:53:33 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:54:06 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:54:47 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:54:58 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:55:01 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:55:26 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:55:57 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:57:29 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:57:50 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:57:55 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:58:11 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:58:25 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:58:41 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:59:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 21:59:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:00:36 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:00:41 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:00:51 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:05:59 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:06:07 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:06:56 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:07:13 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:07:45 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:08:03 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:08:30 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:09:23 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:09:38 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:09:57 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:12:57 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:14:30 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:14:57 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:15:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:15:11 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:16:51 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:17:16 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:19:41 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:19:48 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:19:56 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:20:21 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:21:42 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.27 22:25:49 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:31:13 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:33:54 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:36:58 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:37:39 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:39:33 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:40:17 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:40:27 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:40:34 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:40:40 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:47:13 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:47:46 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:48:12 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:48:38 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:49:51 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:50:07 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:50:23 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:50:35 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:51:04 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 08:51:58 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+мар 28, 2022 9:00:35 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.03.28 09:00:48 INFO  shutting down Metals[0m
+2022.03.28 09:01:02 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/anyegorov/scala/real_lab3/.metals/lsp.trace.json or /Users/anyegorov/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2022.03.28 09:01:03 INFO  logging to file /Users/anyegorov/scala/real_lab3/.metals/metals.log[0m
+2022.03.28 09:01:03 INFO  Started: Metals version 0.11.2 in workspace '/Users/anyegorov/scala/real_lab3' for client Visual Studio Code 1.65.2.[0m
+2022.03.28 09:01:03 INFO  Parse release: 1.8.0_202[0m
+2022.03.28 09:01:04 INFO  time: initialize in 0.99s[0m
+2022.03.28 09:01:04 WARN  Build server is not auto-connectable.[0m
+2022.03.28 09:01:04 WARN  no build tool detected in workspace '/Users/anyegorov/scala/real_lab3'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.03.28 09:01:05 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.28 09:01:06 INFO  no build target found for /Users/anyegorov/scala/real_lab3/Program.scala. Using presentation compiler with project's scala-library version: 3.1.1[0m
+мар 28, 2022 9:01:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2022.03.28 09:01:09 INFO  time: code lens generation in 3.82s[0m
+2022.03.28 09:21:07 INFO  shutting down Metals[0m
+2022.03.29 08:49:43 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/anyegorov/scala/real_lab3/.metals/lsp.trace.json or /Users/anyegorov/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2022.03.29 08:49:43 INFO  logging to file /Users/anyegorov/scala/real_lab3/.metals/metals.log[0m
+2022.03.29 08:49:43 INFO  Started: Metals version 0.11.2 in workspace '/Users/anyegorov/scala/real_lab3' for client Visual Studio Code 1.65.2.[0m
+2022.03.29 08:49:43 INFO  Parse release: 1.8.0_202[0m
+2022.03.29 08:49:45 INFO  time: initialize in 1.15s[0m
+2022.03.29 08:49:45 WARN  Build server is not auto-connectable.[0m
+2022.03.29 08:49:45 WARN  no build tool detected in workspace '/Users/anyegorov/scala/real_lab3'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.03.29 08:49:46 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.29 08:49:48 INFO  no build target found for /Users/anyegorov/scala/real_lab3/Program.scala. Using presentation compiler with project's scala-library version: 3.1.1[0m
+2022.03.29 08:49:51 INFO  time: code lens generation in 4.71s[0m
+2022.03.29 08:51:47 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.29 08:52:28 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.29 09:10:12 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.29 09:10:25 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.29 09:11:09 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.03.29 20:31:43 INFO  shutting down Metals[0m
+2022.05.07 19:49:47 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/anyegorov/scala/real_lab3/.metals/lsp.trace.json or /Users/anyegorov/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2022.05.07 19:49:47 INFO  logging to file /Users/anyegorov/scala/real_lab3/.metals/metals.log[0m
+2022.05.07 19:49:47 INFO  Started: Metals version 0.11.5 in workspace '/Users/anyegorov/scala/real_lab3' for client Visual Studio Code 1.67.0.[0m
+2022.05.07 19:49:48 INFO  time: initialize in 0.77s[0m
+2022.05.07 19:49:48 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.[0m
+2022.05.07 19:49:48 WARN  Build server is not auto-connectable.[0m
+2022.05.07 19:49:48 WARN  no build tool detected in workspace '/Users/anyegorov/scala/real_lab3'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.05.07 19:49:49 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.05.07 19:49:50 INFO  no build target found for /Users/anyegorov/scala/real_lab3/Program.scala. Using presentation compiler with project's scala-library version: 3.1.2[0m
+2022.05.07 19:49:53 INFO  time: code lens generation in 3.22s[0m
+2022.05.07 19:49:59 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.05.07 19:50:07 WARN  no build target for: /Users/anyegorov/scala/real_lab3/Program.scala[0m
+2022.05.07 20:00:40 INFO  shutting down Metals[0m

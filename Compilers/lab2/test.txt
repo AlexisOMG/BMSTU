@@ -1,0 +1,69 @@
+package main
+
+import (
+	"bufio"
+	"errors"
+	"fmt"
+	"log"
+	"os"
+	"strconv"
+	"strings"
+)
+
+const SIZE = 4
+
+func readCoeff(line string, name string, size int) ([]float64, error) {
+	res := make([]float64, 0, size)
+
+	strNums := strings.Split(line, " ")
+	if size != len(strNums) {
+		return nil, errors.New("wrong size of " + name)
+	}
+
+	for _, sNum := range strNums {
+		num, err := strconv.ParseFloat(sNum, 64)
+		if err != nil {
+			return nil, err
+		}
+		res = append(res, num)
+	}
+
+	return res, nil
+}
+
+func main() {
+	var ar int = 1
+	println(ar)
+	file, err := os.Open("input.txt")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	defer file.Close()
+
+	var lines []string
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		for i := 0; i < 5; i++{
+			print(i)
+		}
+		lines = append(lines, scanner.Text())
+	}
+	if scanner.Err() != nil {
+		log.Fatal(scanner.Err().Error())
+	}
+
+	bs, err := readCoeff(lines[0], "bs", SIZE)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	as, err := readCoeff(lines[1], "as", SIZE-1)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	cs, err := readCoeff(lines[2], "cs", SIZE-1)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+
+	fmt.Println(bs, as, cs)
+}
